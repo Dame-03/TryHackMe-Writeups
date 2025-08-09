@@ -7,4 +7,4 @@ This path covers core cybersecurity concepts including threat types, security op
 ## Write-ups
 - [Room: Seach Skills](Search_Skills.md) – Learned advanced search techniques and evaluating credible sources.
 - [Room: Active Directory Basics](Active_Directory.md) – Covered CIA triad, authentication methods, and access controls.
-- [Room 3: Introduction to Cryptography](Intro-to-Cryptography.md) – Practiced simple encryption/decryption and hashing concepts.
+- [Section: Command Line](Command_Line/) – Covers basic to advanced command line usage.
