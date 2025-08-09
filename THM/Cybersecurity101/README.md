@@ -8,4 +8,4 @@ This path covers core cybersecurity concepts including threat types, security op
 - [Room: Seach Skills](Search_Skills.md) – Learned advanced search techniques and evaluating credible sources.
 - [Room: Active Directory Basics](Active_Directory.md) – Covered CIA triad, authentication methods, and access controls.
 - [Section: Command Line](Command_Line/) – Covers basic to advanced command line usage.
-- [Section: Networking](Networking/) – Introduces networking fundamentals, core protocols, application layer communications, and securing network traffic.
+- [Section: Networking](Networking/) – Covers networking fundamentals, core protocols, and securing communications.
