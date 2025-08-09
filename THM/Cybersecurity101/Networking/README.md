@@ -4,3 +4,4 @@ Covers networking fundamentals, core protocols, and secure communications. Topic
 **Write-ups:**
 - [Fundamentals & Core Protocols](Fundamentals_Protocols.md) – OSI model, addressing, TCP/UDP, DHCP, ARP, NAT, ICMP, and troubleshooting tools.
 - [Application Protocols & Security](Application_Security.md) – Application layer protocols, encryption, HTTPS, secure email, SSH, and VPNs.
+- [Wireshark](Wireshark.md) – Learned packet capture, dissection, and filtering basics.
