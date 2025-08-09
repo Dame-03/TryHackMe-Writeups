@@ -1,5 +1,5 @@
-## Networking 
-This section covers core networking concepts, protocols, and secure communication methods. Topics include the OSI model, IP addressing, routing, infrastructure protocols (DHCP, ARP, NAT, ICMP), application layer protocols (DNS, HTTP, FTP, email protocols), and securing network communications with SSL/TLS, SSH, and VPNs.
+## Networking
+Covers networking fundamentals, core protocols, and secure communications. Topics include the OSI model, IP addressing, routing, infrastructure protocols, application layer protocols, and encryption methods.
 
 **Write-ups:**
 - [Fundamentals & Core Protocols](Fundamentals_Protocols.md) – OSI model, addressing, TCP/UDP, DHCP, ARP, NAT, ICMP, and troubleshooting tools.
