@@ -2,7 +2,7 @@
 
 **Status:** In Progress ⏳  
 **Summary:**  
-This path covers core cybersecurity concepts including threat types, security operations, basic cryptography, and introductory offensive/defensive tools.
+This path covers core cybersecurity concepts including computer networking, cryptography, Windows and Linux fundamentals, Active Directory basics, introductory offensive security tools, defensive solutions, and cybersecurity career paths.
 
 ## Write-ups
 - [Room: Seach Skills](Search_Skills.md) – Learned advanced search techniques and evaluating credible sources.
