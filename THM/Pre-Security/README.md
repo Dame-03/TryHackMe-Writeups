@@ -1,7 +1,8 @@
 # THM: Pre-Security
 
 **Date Completed:** July 21, 2025  
-**Difficulty:** Easy  
+**Certificate:** [THM: Pre-Security](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-PMQGPUO8Q0.pdf) 
+## Tools Used
 **Linux**
 - Bash shell commands (ls, cd, cat, nano)
 - File navigation and basic text editing
