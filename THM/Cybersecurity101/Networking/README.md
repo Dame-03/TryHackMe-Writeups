@@ -6,3 +6,4 @@ Covers networking fundamentals, core protocols, and secure communications. Topic
 - [Application Protocols & Security](Application_Security.md) – Application layer protocols, encryption, HTTPS, secure email, SSH, and VPNs.
 - [Wireshark](Wireshark.md) – Learned packet capture, dissection, and filtering basics.
 - [Tcpdump](Tcpdump.md) – Learned packet capture, filtering, and output control with tcpdump.
+- [Nmap](Nmap.md) - in progress
