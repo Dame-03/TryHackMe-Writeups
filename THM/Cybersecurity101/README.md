@@ -9,3 +9,4 @@ This path covers core cybersecurity concepts including computer networking, cryp
 - [Room: Active Directory Basics](Active_Directory.md) – Covered CIA triad, authentication methods, and access controls.
 - [Section: Command Line](Command_Line/) – Covers basic to advanced command line usage.
 - [Section: Networking](Networking/) – Covers networking fundamentals, core protocols, and securing communications.
+- [Section: Cryptography](Cryptography/) - 
