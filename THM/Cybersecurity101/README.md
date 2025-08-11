@@ -10,3 +10,4 @@ This path covers core cybersecurity concepts including computer networking, cryp
 - [Section: Command Line](Command_Line/) – Covers basic to advanced command line usage.
 - [Section: Networking](Networking/) – Covers networking fundamentals, core protocols, and securing communications.
 - [Section: Cryptography](Cryptography/) – Covers encryption algorithms, hashing, and practical cryptographic tools.
+- [Section: Exploitation Basics](Exploitation_Basics/) -
