@@ -3,3 +3,4 @@ Covers the fundamentals of web application security, including the structure and
 
 **Write-ups:**
 - [Room: Web Applications Basics](Web_App.md)- Learned core concepts of web apps, URLs, HTTP methods, status codes, and headers.
+- [Room: JavaScript Essentials](JS_Essent.md) – Learned JavaScript basics, HTML integration, and security testing techniques.
