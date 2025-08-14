@@ -5,3 +5,4 @@ Covers the fundamentals of web application security, including the structure and
 - [Room: Web Applications Basics](Web_App.md)- Learned core concepts of web apps, URLs, HTTP methods, status codes, and headers.
 - [Room: JavaScript Essentials](JS_Essent.md) – Learned JavaScript basics, HTML integration, and security testing techniques.
 - [Room: SQL Fundamentals](SQL_Fund.md) – Learned database concepts, SQL basics, CRUD operations, clauses, operators, and functions.
+- [Room: Burp Suite Basics](Burp_Suite.md) – Learned Burp Suite installation, navigation, configuration, and core tool usage.
