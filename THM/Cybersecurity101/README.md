@@ -12,3 +12,4 @@ This path covers core cybersecurity concepts including computer networking, cryp
 - [Section: Cryptography](Cryptography/) – Covers encryption algorithms, hashing, and practical cryptographic tools.
 - [Section: Exploitation Basics](Exploitation_Basics/) - Covers the art of exploitation by leveraging a real-world vulnerability with the Metasploit framework.
 - [Section: Web Hacking](Web_Hacking/) - Covers web applications, JavaScript, SQL, OWASP Top Ten, and Burp Suite.
+- [Section: Offensive Secuirty Tooling](Offensive_Tools/) – Covers Hydra for password attacks, Gobuster for directory discovery, and SQLMap for database exploitation.
