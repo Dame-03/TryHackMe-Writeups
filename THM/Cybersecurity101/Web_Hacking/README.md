@@ -6,3 +6,4 @@ Covers the fundamentals of web application security, including the structure and
 - [Room: JavaScript Essentials](JS_Essent.md) – Learned JavaScript basics, HTML integration, and security testing techniques.
 - [Room: SQL Fundamentals](SQL_Fund.md) – Learned database concepts, SQL basics, CRUD operations, clauses, operators, and functions.
 - [Room: Burp Suite Basics](Burp_Suite.md) – Learned Burp Suite installation, navigation, configuration, and core tool usage.
+- [Room: OWASP Top 10 -2021](OWASP.md) - Explored the top web vulnerabilities, exploitation methods, and mitigations.
