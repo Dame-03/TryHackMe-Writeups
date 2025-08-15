@@ -3,6 +3,6 @@ This section explores three essential offensive security tools used in penetrati
 
 **Write-ups:**
 - [Room: Hydra](Hydra.md) – Learned to brute-force web credentials using Hydra.
-- [Room: Gobuster Basics](Gobuster.md) - In progress
+- [Room: Gobuster Basics](Gobuster.md) – Learned enumeration techniques for directories, subdomains, and virtual hosts.
 - [Room: Shells Overview](Shells.md) - In progress
 - [Room: SQLMap Basics](SQLMap.md) - In progress
