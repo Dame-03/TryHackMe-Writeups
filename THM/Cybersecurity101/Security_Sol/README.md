@@ -9,4 +9,4 @@ In this module, you will learn how essential defensive security solutions work, 
 - [Room: Intro to SIEM](SIEM.md) – Covers SIEM fundamentals, log sources, network visibility, and detection capabilities.
 - [Room: Firewall Fundamentals](Firewall_Fun.md) – Covers firewall types, rules, and hands-on practice with Windows and Linux firewalls.
 - [Room: IDS Fundamentals](IDS_Fun.md) – Covers IDS types, Snort IDS basics, and writing custom detection rules.
-- [Room: Vulnerability Scanner Overview](Vuln_Scanner.md)- 
+- [Room: Vulnerability Scanner Overview](Vuln_Scanner.md) – Covers types of vulnerability scanning, tools, and OpenVAS demonstration.
