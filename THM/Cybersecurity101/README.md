@@ -15,3 +15,4 @@ This path covers core cybersecurity concepts including computer networking, cryp
 - [Section: Offensive Secuirty Tooling](Offensive_Tools/) – Covers Hydra for password attacks, Gobuster for directory discovery, and SQLMap for database exploitation.
 - [Section: Defensive Security](Defensive_Sec/) - Covers SOC, digital forensics, and incident response.
 - [Section: Security Solutions](Security_Sol/) – Covers defensive tools like firewalls, IDS, vulnerability scanners, and SIEM.
+- [Section: Defensive Security Tooling](Defensive_Tool/) – Covers CyberChef, CAPA, REMnux, FlareVM, and other defensive tools for monitoring, detection, and response.
