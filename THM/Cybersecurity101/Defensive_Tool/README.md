@@ -8,3 +8,4 @@ This module teaches critical skills for monitoring, detecting, and responding to
 **Write-ups:**  
 - [Room: CyberChef Basics](CyberChef.md) – Learned navigation, common operations, and recipe creation in CyberChef.
 - [Room: CAPA Basics](CAPA.md) – Learned CAPA usage, result interpretation, and identifying potential program activity.
+- [Room: REMnux Basics](REMnux.md) – Learned malware analysis basics, network simulation, and memory analysis with REMnux.
