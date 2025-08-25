@@ -1,7 +1,7 @@
 # REMnux Basics
 
 **Date Completed:** Aug 2025  
-**Tools Used:** REMnux VM, network simulation utilities, memory analysis tools
+**Tools Used:** REMnux VM, oledump, memory analysis tools
 
 ## Summary
 This room introduced the REMnux Linux distribution, a specialized environment for malware analysis and reverse engineering. It covered exploring the built-in tools within the REMnux VM, analyzing potentially malicious documents, simulating a fake network for controlled behavioral analysis, and using memory analysis tools to investigate system images.
