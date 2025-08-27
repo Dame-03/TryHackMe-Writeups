@@ -16,3 +16,4 @@ This path covers core cybersecurity concepts including computer networking, cryp
 - [Section: Defensive Security](Defensive_Sec/) - Covers SOC, digital forensics, and incident response.
 - [Section: Security Solutions](Security_Sol/) – Covers defensive tools like firewalls, IDS, vulnerability scanners, and SIEM.
 - [Section: Defensive Security Tooling](Defensive_Tool/) – Covers CyberChef, CAPA, REMnux, FlareVM, and other defensive tools for monitoring, detection, and response.
+- [Room: Security Principles](Sec_Princ.md) – Learned CIA/DAD models, key security principles, and differences between vulnerabilities, threats, and risks.
