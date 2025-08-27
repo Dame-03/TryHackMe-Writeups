@@ -1,6 +1,6 @@
 # Cybersecurity 101 Path
 
-**Certificate:** (https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-G3GYWLHU89.pdf)  
+**Certificate:** [THM: Cybersecuirty101](https://tryhackme-certificates.s3-eu-west-1.amazonaws.com/THM-G3GYWLHU89.pdf)  
 **Summary:**  
 This path covers core cybersecurity concepts including computer networking, cryptography, Windows and Linux fundamentals, Active Directory basics, introductory offensive security tools, defensive solutions, and cybersecurity career paths.
 
