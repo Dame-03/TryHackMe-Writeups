@@ -1,61 +1,44 @@
 # Walking an Application
 
 **Date Completed:** Sept 2025  
-**Tools Used:** Browser Developer Tools (Elements, Console, Network, Sources, Application)
-
-## Summary
-Manually reviewed a web application using only the browser’s developer tools. Practiced revealing hidden/disabled DOM, inspecting client-side code, analyzing HTTP requests/responses, and enumerating client storage (cookies, localStorage, sessionStorage). Demonstrated how to validate hypotheses with Local Overrides and breakpoints, and captured reproducible, redacted evidence without external tools or scripts.
-
-## Skills Learned / Improved
-- Revealing hidden/disabled/ARIA-hidden content via Elements panel
-- Inspecting and modifying `localStorage`, `sessionStorage`, and cookies
-- Exporting and reviewing HAR files (requests, responses, headers)
-- Using Local Overrides to test/bypass client-side checks safely
-- Setting XHR/Fetch, DOM, and Event Listener breakpoints
-- Console scripting for quick probing and state changes
-- Redacting sensitive data and structuring evidence for reproducibility
-
----
 
 ![Method: Browser-only](https://img.shields.io/badge/Method-Browser--only-informational)
-![Evidence: HAR attached](https://img.shields.io/badge/Evidence-HAR-green)
+![Evidence: Screenshots](https://img.shields.io/badge/Evidence-Screenshots-green)
 ![Flags: Redacted](https://img.shields.io/badge/Flags-REDACTED-blue)
-![Reproducible](https://img.shields.io/badge/Reproducible-Yes-success)
 
-## Artifacts (Reproducibility)
-| Artifact | Path | Notes |
-|---|---|---|
-| HAR export | `evidence/HAR/full.har` | “Preserve log”, “Disable cache” enabled |
-| localStorage dump | `evidence/storage/localStorage.json` | Captured via `copy(JSON.stringify(localStorage))` |
-| sessionStorage dump | `evidence/storage/sessionStorage.json` | Same method as above |
-| Cookies | `evidence/storage/cookies.txt` | `document.cookie` (sanitized) |
-| Screenshots | `evidence/screenshots/` | Before/after revealing hidden DOM, Overrides effect |
-| Console log | `evidence/notes/console.log.txt` | Key commands & outputs (redacted) |
+## Tools Used
+- [x] View Source
+- [x] Inspector (Elements/CSS)
+- [x] Debugger (JS breakpoints/step-through)
+- [x] Network (request/response review)
 
-## Environment & Versions
-- OS: <Windows 10 / Linux / macOS>
-- Browser: <Chrome/Edge/Firefox> `<version>`
-- VPN: <THM VPN / N/A>
-- Time Spent: <hh:mm>
+## Evidence (Screenshots Only)
+| Tool      | Screenshot(s) to include                                 | Notes |
+|-----------|-----------------------------------------------------------|-------|
+| View Source | `evidence/screenshots/view-source_highlight.png`        | Highlighted relevant HTML/comment (flags redacted) |
+| Inspector  | `evidence/screenshots/inspector_before.png`, `inspector_after.png` | Before/after toggling `hidden` / `disabled` / CSS |
+| Debugger   | `evidence/screenshots/debugger_paused.png`               | Paused at a breakpoint showing key variable/state |
+| Network    | `evidence/screenshots/network_request.png`               | Specific request/response panel with interesting param/header (redacted) |
 
-## Method Details (Expandable)
-<details><summary>DevTools Actions (click to expand)</summary>
+## Method (What I Did)
+**View Source**
+- Opened page source and reviewed human-readable HTML.
+- Noted informative comments/strings relevant to progression. *(redacted in screenshots)*
 
-- **Elements:** Removed `hidden` / `disabled` / `aria-hidden` to reveal DOM.
-- **Sources → Search:** `flag`, `token`, `.map`, `TODO`, `base64`.
-- **Network:** Exported HAR; noted endpoints/params; replayed requests.
-- **Application:** Enumerated and modified `localStorage` / `sessionStorage` / cookies.
-- **Breakpoints:** XHR/Fetch, DOM subtree modified, Event Listener (click/submit).
-- **Local Overrides:** Toggled client-side checks to validate hypotheses.
-</details>
+**Inspector**
+- Located DOM elements hidden via attributes/classes and toggled them to verify what appears.
+- Edited text/attributes **temporarily** to confirm client-side gating. *(no permanent changes)*
 
-<details><summary>Console Snippets Used</summary>
+**Debugger**
+- Set a breakpoint at a relevant JS line/function and stepped execution to observe state changes.
+- Verified which variable/branch controlled visibility or flow. *(screenshot shows paused state, redacted)*
 
-```js
-// Snapshot storage (pasted to .json files)
-copy(JSON.stringify(localStorage, null, 2));
-copy(JSON.stringify(sessionStorage, null, 2));
-document.cookie;
+**Network**
+- Observed requests as actions occurred; inspected one response/param that influenced page behavior.
+- Confirmed what data the client relied on vs. what the server returned.
 
-// Example hypothesis test
-localStorage.setItem('featureFlag', 'true'); location.reload();
+## Key Takeaway (Redacted)
+- Client-side controls (DOM/CSS/JS) influenced what was shown. After safe, temporary inspection steps, additional content became visible.
+- **Mitigation:** Do not rely on client-side checks for authorization; enforce on the server and avoid leaking sensitive hints in source/comments.
+
+
