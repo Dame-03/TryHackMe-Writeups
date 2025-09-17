@@ -9,25 +9,27 @@
 - [x] Network (request/response review)
 
 ## Method (What I Did)
+
 **View Source**
 - Opened page source and reviewed human-readable HTML.
-- Viewable HTML human comments, asset files, and links gave me the ability to find multiple flags through non-customer authorized sections and find secret files.
-- A comment was left for future developing content which contained a link. The link lead to a admin related service which gave direction to the admin login page path and credentials for it.
-- Multiple sources were listed in a assets folder. Site didn't have proper protection for it so access was available through /assets path. Leading to readable flag.
+- Comments, asset links, and internal paths revealed multiple flags in non-customer pages and exposed “secret” files.
+- A developer comment contained a link to an admin-related service, which disclosed the admin login path and credentials.
+- The `/assets` directory listed multiple resources; with no protection, direct access to that path exposed a readable flag.
 
 **Inspector**
-- Inspected page reserved for premium customers only. Page covered content with pop-up blocker
-- The pop-up blocker was used the style "display:block", by replacing block with "none", this removed the blocker and allowed me to access the next flag. 
+- Inspected a page reserved for premium customers that was covered by an overlay “pop-up blocker.”
+- The overlay used `display: block`; switching it to `display: none` removed the blocker and exposed the next flag.
 
 **Debugger**
-- Page flashed a box with a message every time the page was loaded. Used the sources tab to find the JavaScript responsible for it.
-- By reloading the page, the page used a js in the assets folder called flash.mini.js. Upon opening the script, a line contained the removale of the box after it was inserted. Setting a breakpoint allowed the message to be viewable and contained a flag.
+- A message box flashed briefly on load. In **Sources**, found the JavaScript responsible (e.g., `assets/flash.mini.js`).
+- Reloaded and set a breakpoint on the line that removed the box. Pausing execution kept the message visible and it contained a flag.
 
 **Network**
-- In contact page, format is set up by name then message. This service uses a method called AJAX.
-- Using the network tab while sending messages, creates a new entry "contact-msg". Reviewing this entry with network tab showed a response to the entry that contained a flag.
+- On the contact page, submissions were sent via AJAX.
+- Watching **Network** while sending a message showed a `contact-msg` request; inspecting its response revealed a flag.
 
 ## Key Takeaway
-- Hacking can simply be done by jsut viewing the content and connecting the dots after observation. Having a site be vulnerable to simple brower tools creates high risks due to the free cost of the tool, thus every user has access to the tool to hack your site. 
+- You can uncover real issues with **just the browser** by reading source, editing the DOM, pausing JS, and inspecting requests/responses. Relying on client-side controls (overlays, comments, exposed assets, or verbose AJAX responses) creates risk because every user has these tools for free.
+
 
 
