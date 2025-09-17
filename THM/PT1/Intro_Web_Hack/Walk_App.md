@@ -8,33 +8,26 @@
 - [x] Debugger (JS breakpoints/step-through)
 - [x] Network (request/response review)
 
-## Evidence (Screenshots Only)
-| Tool      | Screenshot(s) to include                                 | Notes |
-|-----------|-----------------------------------------------------------|-------|
-| View Source | `evidence/screenshots/view-source_highlight.png`        | Highlighted relevant HTML/comment (flags redacted) |
-| Inspector  | `evidence/screenshots/inspector_before.png`, `inspector_after.png` | Before/after toggling `hidden` / `disabled` / CSS |
-| Debugger   | `evidence/screenshots/debugger_paused.png`               | Paused at a breakpoint showing key variable/state |
-| Network    | `evidence/screenshots/network_request.png`               | Specific request/response panel with interesting param/header (redacted) |
-
 ## Method (What I Did)
 **View Source**
 - Opened page source and reviewed human-readable HTML.
-- Noted informative comments/strings relevant to progression. *(redacted in screenshots)*
+- Viewable HTML human comments, asset files, and links gave me the ability to find multiple flags through non-customer authorized sections and find secret files.
+- A comment was left for future developing content which contained a link. The link lead to a admin related service which gave direction to the admin login page path and credentials for it.
+- Multiple sources were listed in a assets folder. Site didn't have proper protection for it so access was available through /assets path. Leading to readable flag.
 
 **Inspector**
-- Located DOM elements hidden via attributes/classes and toggled them to verify what appears.
-- Edited text/attributes **temporarily** to confirm client-side gating. *(no permanent changes)*
+- Inspected page reserved for premium customers only. Page covered content with pop-up blocker
+- The pop-up blocker was used the style "display:block", by replacing block with "none", this removed the blocker and allowed me to access the next flag. 
 
 **Debugger**
-- Set a breakpoint at a relevant JS line/function and stepped execution to observe state changes.
-- Verified which variable/branch controlled visibility or flow. *(screenshot shows paused state, redacted)*
+- Page flashed a box with a message every time the page was loaded. Used the sources tab to find the JavaScript responsible for it.
+- By reloading the page, the page used a js in the assets folder called flash.mini.js. Upon opening the script, a line contained the removale of the box after it was inserted. Setting a breakpoint allowed the message to be viewable and contained a flag.
 
 **Network**
-- Observed requests as actions occurred; inspected one response/param that influenced page behavior.
-- Confirmed what data the client relied on vs. what the server returned.
+- In contact page, format is set up by name then message. This service uses a method called AJAX.
+- Using the network tab while sending messages, creates a new entry "contact-msg". Reviewing this entry with network tab showed a response to the entry that contained a flag.
 
-## Key Takeaway (Redacted)
-- Client-side controls (DOM/CSS/JS) influenced what was shown. After safe, temporary inspection steps, additional content became visible.
-- **Mitigation:** Do not rely on client-side checks for authorization; enforce on the server and avoid leaking sensitive hints in source/comments.
+## Key Takeaway
+- Hacking can simply be done by jsut viewing the content and connecting the dots after observation. Having a site be vulnerable to simple brower tools creates high risks due to the free cost of the tool, thus every user has access to the tool to hack your site. 
 
 
