@@ -6,3 +6,4 @@ This section covers practical web application security testing, focusing on iden
 ## Write-ups
 - [Room: Walking an Application](Walk_App.md) – Manual review using only browser DevTools to reveal client-side gated content and observe request/response behavior.
 - [Room: Content Discovery](Cont_Discov.md) – Finding hidden/private content and tech signals via manual + OSINT techniques; light automation later.
+- [Room: Subdomain Enumeration](Sub_Enum.md) - – Discover subdomains to expand scope using OSINT, DNS brute force, and virtual host enumeration.
