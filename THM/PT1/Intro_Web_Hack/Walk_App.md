@@ -2,10 +2,6 @@
 
 **Date Completed:** Sept 2025  
 
-![Method: Browser-only](https://img.shields.io/badge/Method-Browser--only-informational)
-![Evidence: Screenshots](https://img.shields.io/badge/Evidence-Screenshots-green)
-![Flags: Redacted](https://img.shields.io/badge/Flags-REDACTED-blue)
-
 ## Tools Used
 - [x] View Source
 - [x] Inspector (Elements/CSS)
