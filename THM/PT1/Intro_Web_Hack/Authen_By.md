@@ -1,6 +1,6 @@
 # Authentication Bypass
 
-**Date Completed:**  in progress
+**Date Completed:**  Dec 2025
 
 ## Tools Used
 - [x] ffuf
